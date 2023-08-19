@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(grey, white);
+  }
+  
+  #clockContainer {
+    position: relative;
+    height: 40vw;
+    width: 40vw;
+    background: url(https://lh6.googleusercontent.com/Q14ld2v53oAIXy59TLWWyzSNcFi8CcDtT1IrSGt3BJ3sEVIpSb8715uFVmX8E-_YvXLyhsoNJmv45s0trQngwQGC5-n0ro719VUF7tgzi3LgDDnQdt2PzS_bW2jWKuGeV9GpXbBB4oqC5aInDA) no-repeat;
+    background-size: 100%;
+  }
+  
+  #clockContainer #hour,
+  #clockContainer #minute,
+  #clockContainer #second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+    transition: transform 0.5s cubic-bezier(0.4, 2.4, 0.2, 1); /* Smooth animation */
+
+  }
+  
+  #clockContainer #hour {
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+  }
+  
+  #clockContainer #minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+  }
+  
+  #clockContainer #second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+  }
+
+  @keyframes rotate {
+    0% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+  .hour.animated {
+    animation: rotate 43200s linear infinite; /* 12 hours in seconds */
+}
+
+.minute.animated {
+    animation: rotate 3600s linear infinite; /* 60 minutes in seconds */
+}
+
+.second.animated {
+    animation: rotate 60s linear infinite; /* 60 seconds in seconds */
+}
