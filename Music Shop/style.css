@@ -1,0 +1,94 @@
+/* General Rulesets */
+* {
+    color: #f0f1f3;
+  }
+  
+  body {
+    font-family: Helvetica, sans-serif;
+      background: url("https://images.unsplash.com/photo-1571102869115-d09dc70f4b75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80") no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  footer {
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    position: static;
+  }
+  
+  header {
+    padding-top: 3%;
+    min-height: 70px;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .branding {
+    float: left;
+  }
+  
+  .branding h1 {
+    font-weight: normal;
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  .navbar {
+    margin-top: 15%;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  
+  .navbar li a {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: normal;
+  }
+  
+  .navbar li a:hover, .navbar .current a {
+    color: #ffffff;
+  }
+  
+
+  /* circle loader  */
+  .lds-circle {
+    display: inline-block;
+    transform:  translate(1px);
+  }
+  .lds-circle > div {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    background-color: black;
+    animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8) infinite;
+  }
+
+  @keyframes lds-circle {
+    0%, 100% {
+      animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+    }
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(1800deg);
+      animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    }
+    100% {
+      transform: rotate(3600deg);
+    }
+  }
+  
