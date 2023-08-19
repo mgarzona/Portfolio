@@ -1,30 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Tangerine');
-
-* {
-    box-sizing: border-box;
-}
-
-body{
-    font-family: 'Tangerine', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
-}
-.bg{
-    background: url('https://cdn.mos.cms.futurecdn.net/qAaqtuur2VRuaTSz2zTVhK.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: calc(100vw + 30px);
-    height: calc(100vh + 30px);
-    z-index: -1;
-    filter: blur(0px);
-} .loading-text{
-    font-size: 50px;
-    color:aliceblue;
+.meme-generator {
+   font-family: "Roboto", sans-serif;
+   text-align: center;
+ }
  
-}
+ .meme-generator img {
+   height: 430px;
+   object-fit: cover;
+ }
+ 
+ .meme-generator .generate-meme-btn {
+   padding: 8px 20px;
+   border: none;
+   border-left: 4px solid #222;
+   border-right: 4px solid #222;
+   margin: 24px 0;
+   font-size: 20px;
+   color: #f64d4d;
+   background: #fff;
+   cursor: pointer;
+   transition: all 400ms ease;
+ }
+ 
+ .meme-generator .generate-meme-btn:hover {
+   padding: 8px 36px;
+   border-left: 8px solid #222;
+   border-right: 8px solid #222;
+   letter-spacing: 3px;
+ }
+ 
+ .meme-generator .meme-author {
+   margin: 8px;
+ }
